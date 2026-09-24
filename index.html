@@ -300,7 +300,7 @@
                             <div class="flex items-center space-x-2.5 space-x-reverse">
                                 <input type="radio" name="offerSelect" id="offerRadioVIP" checked class="w-4 h-4 accent-rolex-emerald">
                                 <div>
-                                    <h4 class="text-sm font-black text-gray-900">GOLD-الذهبي </h4>
+                                    <h4 class="text-sm font-black text-gray-900">SANTOS GOLD-الذهبي </h4>
                                     <p class="text-[11px] text-gray-600 mt-0.5">ساعة دايتونا + علبة فخمة + بطاقة ضمان VIP</p>
                                     <span class="text-[11px] text-emerald-600 font-bold block mt-1"><i class="fas fa-truck-fast ml-1"></i> + مصاريف التوصيل: 700 دج</span>
                                 </div>
@@ -317,7 +317,7 @@
                             <div class="flex items-center space-x-2.5 space-x-reverse">
                                 <input type="radio" name="offerSelect" id="offerRadioStd" class="w-4 h-4 accent-rolex-emerald">
                                 <div>
-                                    <h4 class="text-sm font-bold text-gray-800">SILVER-الفضي</h4>
+                                    <h4 class="text-sm font-bold text-gray-800">SANTOS SILVER-الفضي</h4>
                                     <p class="text-[11px] text-gray-500 mt-0.5">ساعة دايتونا + علبة فخمة + بطاقة ضمان VIP</p>
                                     <span class="text-[11px] text-amber-700 block mt-1">+ مصاريف التوصيل: 700 دج</span>
                                 </div>
@@ -406,10 +406,10 @@
             <span class="text-[11px] text-rolex-emerald font-bold uppercase tracking-widest">تم تسجيل حجزك بنجاح</span>
             <h2 class="text-2xl font-black text-gray-900 mt-1 mb-2">تهانينا <span id="thankYouCustomerName" class="text-rolex-emerald">سيدي</span>! 🎉</h2>
             <p class="text-xs text-gray-600 leading-relaxed mb-4">
-                لقد حجزت قطعة من إصدار <b class="text-gray-900">Rolex Daytona Cosmograph</b> الفاخر. سيقوم فريق خدمة العملاء بالتواصل معك هاتفياً في أقرب وقت لتأكيد تفاصيل الشحن.
+                لقد حجزت قطعة من إصدار <b class="text-gray-900">CART SANTTOS</b> الفاخر. سيقوم فريق خدمة العملاء بالتواصل معك هاتفياً في أقرب وقت لتأكيد تفاصيل الشحن.
             </p>
             <div class="bg-gray-50 rounded-2xl p-3.5 border border-gray-200 text-xs text-right space-y-1.5 mb-6">
-                <div class="flex justify-between"><span class="text-gray-500">الباقة المختارة:</span><span id="tyOfferName" class="font-bold text-rolex-emerald">ساعة + علبة فخمة VIP</span></div>
+                <div class="flex justify-between"><span class="text-gray-500">الباقة المختارة:</span><span id="tyOfferName" class="font-bold text-rolex-emerald">SANTOS GOLD</span></div>
                 <div class="flex justify-between"><span class="text-gray-500">المبلغ الإجمالي:</span><span id="tyTotalAmount" class="font-black text-gray-900">9,900 دج</span></div>
                 <div class="flex justify-between"><span class="text-gray-500">الولاية:</span><span id="tyWilayaName" class="font-bold text-gray-800">الجزائر</span></div>
             </div>
@@ -442,8 +442,8 @@
 
         let currentOffer = 'vip';
         const pricing = {
-            vip: { price: 9900, shipping: 0, title: "GOLD " },
-            std: { price: 8900, shipping: 700, title: "SILVEER" }
+            vip: { price: 9900, shipping: 0, title: "SANTOS GOLD " },
+            std: { price: 8900, shipping: 700, title: "SANTOS SILVEER" }
         };
 
         function selectOffer(type) {
@@ -459,14 +459,14 @@
                 radioVIP.checked = true;
                 radioStd.checked = false;
                 document.getElementById('stickyPriceText').textContent = '9,900 دج';
-                document.getElementById('stickyBadgeText').textContent = '👑 ساعة + علبة فخمة + توصيل مجاني';
+                document.getElementById('stickyBadgeText').textContent = 'SANTOS GOLD';
             } else {
                 cardStd.classList.add('active');
                 cardVIP.classList.remove('active');
                 radioStd.checked = true;
                 radioVIP.checked = false;
-                document.getElementById('stickyPriceText').textContent = '9,600 دج';
-                document.getElementById('stickyBadgeText').textContent = 'ساعة فقط (8900 دج + 700 دج توصيل)';
+                document.getElementById('stickyPriceText').textContent = '9,900 دج';
+                document.getElementById('stickyBadgeText').textContent = 'SANTOS SILVER';
             }
             updateRecap();
         }
@@ -510,12 +510,12 @@
 
         // 🌟 إشعار الطلبات المنبثق من الأعلى (Social Proof Engine)
         const socialProofData = [
-            { name: "أمين من سطيف (حي الهضاب)", action: "حجز ساعة + علبة فخمة (9900 دج)", time: "منذ دقيقتين" },
-            { name: "كريم من وهران (عين الترك)", action: "حجز ساعة + علبة فخمة (9900 دج)", time: "منذ 4 دقائق" },
-            { name: "ياسين من قسنطينة (زواغي)", action: "حجز العرض البسيط (9600 دج)", time: "منذ دقيقة واحدة" },
-            { name: "حمزة من الجزائر العاصمة (الشراقة)", action: "حجز ساعة + علبة فخمة (9900 دج)", time: "منذ 6 دقائق" },
-            { name: "بلال من عنابة (سيدي عمار)", action: "حجز ساعة + علبة فخمة (9900 دج)", time: "منذ 3 دقائق" },
-            { name: "عمر من باتنة (حي النصر)", action: " ساعة + علبة فخمة (9900 دج)", time: "منذ 5 دقائق" }
+            { name: "أمين من سطيف (حي الهضاب)", action: "SANTOS GOLD (9900 دج)", time: "منذ دقيقتين" },
+            { name: "كريم من وهران (عين الترك)", action: "SANTOS SILVER (9900 دج)", time: "منذ 4 دقائق" },
+            { name: "ياسين من قسنطينة (زواغي)", action: "SANTOS GOLD (9900 دج)", time: "منذ دقيقة واحدة" },
+            { name: "حمزة من الجزائر العاصمة (الشراقة)", action: "SANTOS SILVER (9900 دج)", time: "منذ 6 دقائق" },
+            { name: "بلال من عنابة (سيدي عمار)", action: "SANTOS GOLD (9900 دج)", time: "منذ 3 دقائق" },
+            { name: "عمر من باتنة (حي النصر)", action: " SANTOS GOLD (9900 دج)", time: "منذ 5 دقائق" }
         ];
 
         function triggerSocialProof() {
